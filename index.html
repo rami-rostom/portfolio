@@ -3,12 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/assets/css/reset.css">
   <link rel="stylesheet" href="/assets/css/style.css">
   <title>Portfolio - Rami Rostom</title>
 </head>
 <body>
   <div id="Page">
-    <div id="Theme"></div>
+    <div id="Frame" class="frame">
+      <div class="frame__line frame__line-left"></div>
+      <div class="frame__line frame__line-right"></div>
+      <div class="frame__line frame__line-top"></div>
+      <div class="frame__line frame__line-bottom"></div>
+    </div>
+
+    <div id="Theme" class="theme">
+      <div class="theme__btn">
+        <div class="theme__btn-box is_selected"></div>
+        <p class="theme__btn-text">Light</p>
+      </div>
+
+      <div class="theme__btn">
+        <div class="theme__btn-box"></div>
+        <p class="theme__btn-text">Dark</p>
+      </div>
+    </div>
+
     <header id="Header" class="header">
       <h1 class="header__title">Rami Rostom</h1>
       <h2 class="header__subtitle">Développeur web</h2>
@@ -33,7 +52,25 @@
         </ul>
       </nav>
     </header>
-    <main id="Content"></main>
+    
+    <main id="Content" class="content">
+      <div class="content__inner">
+        <section class="page">
+          <div class="home">
+            <p>
+              <span>dffdsfsfdsfdfs</span>
+              <span>dffdsfsfdsfdfs</span>
+              <span>dffdsfsfdsfdfs</span>
+              <span>dffdsfsfdsfdfs</span>
+              <span>dffdsfsfdsfdfs</span>
+            </p>
+        </div>
+        </section>
+        <section class="page projects"></section>
+        <section class="page contact"></section>
+        <section class="page faq"></section>
+      </div>
+    </main>
   </div>
 </body>
 </html>
