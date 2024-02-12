@@ -6,10 +6,13 @@
   --gap-md: 1rem;
   --gap-lg: 1.5rem;
   --gap-xl: 3rem;
+  --color-black: #0f0e17;
+  --color-white: #fffffe;
 
   font-family: 'NeueMontrealMono-Medium';
 }
 
+/* ============ FONTS ============  */
 @font-face { 
   font-family: 'NeueMontrealMono-Medium'; 
   src: 
@@ -40,7 +43,7 @@
 
 /* ============ GENERAL SECTION ============  */
 .is_selected {
-  background-color: black;
+  background-color: var(--color-black);
 }
 
 .is_visible {
@@ -72,7 +75,7 @@
 
 .frame__line {
   position: absolute;
-  background-color: black;
+  background-color: var(--color-black);
 }
 
 .frame__line-left {
@@ -127,7 +130,7 @@
 }
 
 .theme__btn-box {
-  border: 1px solid black;
+  border: 1px solid var(--color-black);
   height: 8px;
   width: 8px;
 }
@@ -177,6 +180,11 @@
 .header__nav-link-text {
   font-size: 0.9rem;
   text-decoration: none;
+}
+
+.header__nav-link-text:hover {
+  opacity: 35%;
+  transition-duration: 400ms;
 }
 
 
@@ -280,18 +288,18 @@
 
 /* ============ DARK MODE SETTINGS ============  */
 .is-dark #Page {
-  background-color: black;
-  color: white;
+  background-color: var(--color-black);
+  color: var(--color-white);
 }
 
 .is-dark .frame__line {
-  background-color: white;
+  background-color: var(--color-white);
 }
 
 .is-dark .theme__btn-box {
-  border: 1px solid white;
+  border: 1px solid var(--color-white);
 }
 
 .is-dark .is_selected {
-  background-color: white;
+  background-color: var(--color-white);
 }
