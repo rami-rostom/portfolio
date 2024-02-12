@@ -1,3 +1,14 @@
+// ========== Handle introduction ========== //
+const intro = document.getElementById('Intro');
+
+// Intro page is visible the first 2 seconds when DOM is loaded
+document.addEventListener('DOMContentLoaded', () => {
+  setTimeout(() => {
+    intro.classList.add('display-none');
+  }, 2000);
+})
+
+
 // ========== Handle light and dark mode buttons ========== //
 const darkModeBtn = document.getElementById('Dark');
 const lightModeBtn = document.getElementById('Light');
