@@ -5,13 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/assets/css/reset.css">
   <link rel="stylesheet" href="/assets/css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <title>Portfolio - Rami Rostom</title>
 </head>
 <body>
   <div id="Page">
+    <!-- ============== FRAME SECTION ============== -->
     <div id="Frame" class="frame">
       <div class="frame__line frame__line-left"></div>
       <div class="frame__line frame__line-right"></div>
@@ -19,6 +17,7 @@
       <div class="frame__line frame__line-bottom"></div>
     </div>
 
+    <!-- ============== THEME SECTION ============== -->
     <div id="Theme" class="theme">
       <div class="theme__btn">
         <div class="theme__btn-box is_selected"></div>
@@ -31,6 +30,7 @@
       </div>
     </div>
 
+    <!-- ============== HEADER SECTION ============== -->
     <header id="Header" class="header">
       <h1 class="header__title">Rami Rostom</h1>
       <h2 class="header__subtitle">Développeur web</h2>
@@ -56,11 +56,13 @@
       </nav>
     </header>
     
+    <!-- ============== CONTENT SECTION ============== -->
     <main id="Content" class="content">
       <div class="content__inner">
-        <section class="page">
-          <!-- ============== PAGE HOME ============== -->
-          <div class="page__home">
+        <!-- ============== PAGE HOME ============== -->
+        <section id="Home" class="page is_hidden">
+          <div class="page__section">
+            <h3 class="page__title">À propos</h3>
             <p class="page__home-text">
               Développeur web basé à Paris,<br />
               anciennement chef de projet<br />
@@ -71,12 +73,45 @@
               l'expérimentation sont au coeur<br />
               des projets que j'entreprends.<br />
             </p>
-        </div>
-
-
+          </div>
         </section>
-        <section class="page projects"></section>
+
+        <!-- ============== PAGE PROJECTS ============== -->
+        <section id="Projects" class="page">
+          <div class="page__section">
+            <h3 class="page__title">Projets</h3>
+            <a href="https://github.com/rami-rostom/portfolio" target="_blank" class="page__projects">
+              <div class="page__projects-detail">
+                <span>2024 / Portfolio / Perso</span>
+              </div>
+              <div class="page__projects-title">
+                <span>Rostom</span>
+              </div>
+            </a>
+
+            <a href="https://github.com/rami-rostom/hecho-front" target="_blank" class="page__projects">
+              <div class="page__projects-detail">
+                <span>2024 / Sport app / Perso</span>
+              </div>
+              <div class="page__projects-title">
+                <span>Hecho</span>
+              </div>
+            </a>
+
+            <a href="https://github.com/O-clock-Cheesecake/projet-5-versus" target="_blank" class="page__projects">
+              <div class="page__projects-detail">
+                <span>2023 / E-sport app / Formation</span>
+              </div>
+              <div class="page__projects-title">
+                <span>Versus</span>
+              </div>
+            </a>
+          </div>
+        </section>
+        <!-- ============== PAGE CONTACT ============== -->
         <section class="page contact"></section>
+
+        <!-- ============== PAGE FAQ ============== -->
         <section class="page faq"></section>
       </div>
     </main>

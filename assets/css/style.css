@@ -17,7 +17,26 @@
       format('opentype'); 
   font-weight: normal; 
   font-style: normal; 
-} 
+}
+
+@font-face { 
+  font-family: 'NeueMontrealMono-Book'; 
+  src: 
+      url('/assets/font/PPNeueMontrealMono-Book.otf')  
+      format('opentype'); 
+  font-weight: normal; 
+  font-style: normal; 
+}
+
+@font-face { 
+  font-family: 'NeueMontrealMono-Thin'; 
+  src: 
+      url('/assets/font/PPNeueMontrealMono-Thin.otf')  
+      format('opentype'); 
+  font-weight: normal; 
+  font-style: normal; 
+}
+
 
 /* ============ GENERAL SECTION ============  */
 .is_selected {
@@ -107,8 +126,8 @@
 
 .theme__btn-box {
   border: 1px solid black;
-  height: 10px;
-  width: 10px;
+  height: 8px;
+  width: 8px;
 }
 
 .theme__btn-text {
@@ -124,7 +143,14 @@
 }
 
 .header__title {
-  font-size: 3rem;
+  font-family: 'NeueMontrealMono-Thin';
+  font-size: 3.5rem;
+  letter-spacing: 0.1rem;
+}
+
+.header__subtitle {
+  font-family: 'NeueMontrealMono-Book';
+  margin-top: var(--gap-xs);
 }
 
 .header__nav {
@@ -142,6 +168,7 @@
 
 .header__nav-link-text {
   font-size: 0.9rem;
+  text-decoration: none;
 }
 
 
@@ -163,7 +190,7 @@
   width: 100%;
 }
 
-.page__home {
+.page__section {
   position: absolute;
   right: calc(var(--pad) * 2);
   bottom: calc(var(--pad) * 2);
@@ -172,9 +199,38 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: var(--gap-sm);
+  gap: var(--gap-md);
 }
 
+.page__title {
+  font-family: 'NeueMontrealMono-Book';
+  margin-bottom: var(--gap-md);
+}
+
+/* ===== PAGE HOME =====  */
 .page__home-text {
   line-height: 1.5;
+}
+
+/* ===== PAGE PROJECTS =====  */
+.page__projects {
+  display: flex;
+  align-items: baseline;
+  gap: var(--gap-md);
+}
+
+.page__projects:hover {
+  opacity: 35%;
+  transition-duration: 400ms;
+}
+
+.page__projects-detail {
+  font-size: 0.8rem;
+}
+
+.page__projects-title {
+  font-family: 'NeueMontrealMono-Thin';
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
 }

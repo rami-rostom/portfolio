@@ -49,6 +49,7 @@ table {
 /* Reset perso */
 a, del, ins {
   text-decoration: none;
+	color: inherit;
 }
 /* a {	
   color: inherit;
