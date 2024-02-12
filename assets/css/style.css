@@ -1,12 +1,35 @@
 :root {
-  --pad: 20px;
-  --vh: 9px
+  --pad: 30px;
+  --vh: 9px;
+  --gap-xs: 0.3rem;
+  --gap-sm: 0.5rem;
+  --gap-md: 1rem;
+  --gap-lg: 1.5rem;
+  --gap-xl: 3rem;
+
+  font-family: 'NeueMontrealMono-Medium';
 }
 
+@font-face { 
+  font-family: 'NeueMontrealMono-Medium'; 
+  src: 
+      url('/assets/font/PPNeueMontrealMono-Medium.otf')  
+      format('opentype'); 
+  font-weight: normal; 
+  font-style: normal; 
+} 
 
 /* ============ GENERAL SECTION ============  */
 .is_selected {
   background-color: black;
+}
+
+.is_visible {
+  display: inline;
+}
+
+.is_hidden {
+  display: none;
 }
 
 /* ============ PAGE SECTION ============  */
@@ -65,7 +88,7 @@
 /* ============ THEME SECTION ============  */
 .theme {
   display: flex;
-  gap: 1rem;
+  gap: var(--gap-md);
 
   position: fixed;
   left: var(--pad);
@@ -79,7 +102,7 @@
 .theme__btn {
   display: flex;
   align-items: center;
-  gap: 0.3rem;
+  gap: var(--gap-xs);
 }
 
 .theme__btn-box {
@@ -100,6 +123,27 @@
   top: calc(var(--pad) * 2);
 }
 
+.header__title {
+  font-size: 3rem;
+}
+
+.header__nav {
+  margin-top: var(--gap-xl);
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-md);
+}
+
+.header__nav-link-dot {
+  font-family: 'Courier New';
+  font-size: 1.2rem;
+}
+
+.header__nav-link-text {
+  font-size: 0.9rem;
+}
+
 
 /* ============ CONTENT SECTION ============  */
 .content {
@@ -117,12 +161,20 @@
 
 .page {
   width: 100%;
-  /* min-height: calc(var(--vh, 1vh)*100); */
 }
 
-.home {
+.page__home {
   position: absolute;
   right: calc(var(--pad) * 2);
   bottom: calc(var(--pad) * 2);
   white-space: nowrap;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--gap-sm);
+}
+
+.page__home-text {
+  line-height: 1.5;
 }
