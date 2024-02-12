@@ -43,6 +43,10 @@
   background-color: black;
 }
 
+.is_not_selected {
+  background-color: black;
+}
+
 .is_visible {
   display: inline;
 }
@@ -115,13 +119,15 @@
   transform-origin: left bottom;
   transform: rotate(-90deg);
 
-  cursor: pointer;
+  z-index: 2;
 }
 
 .theme__btn {
   display: flex;
   align-items: center;
   gap: var(--gap-xs);
+
+  cursor: pointer;
 }
 
 .theme__btn-box {
@@ -179,6 +185,8 @@
   top: 0;
   width: 100%;
   height: 100%;
+
+  z-index: 1;
 }
 
 .content__inner {
@@ -259,4 +267,23 @@
   font-size: 0.9rem;
 
   margin-bottom: var(--gap-md);
+}
+
+
+/* ============ DARK MODE SETTINGS ============  */
+.is-dark #Page {
+  background-color: black;
+  color: white;
+}
+
+.is-dark .frame__line {
+  background-color: white;
+}
+
+.is-dark .theme__btn-box {
+  border: 1px solid white;
+}
+
+.is-dark .is_selected {
+  background-color: white;
 }

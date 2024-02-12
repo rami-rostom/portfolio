@@ -55,9 +55,9 @@ a, del, ins {
   color: inherit;
 } */
 
-/* label, button {
+label, button {
   cursor: pointer;
-} */
+}
 
 html {
   box-sizing: border-box
