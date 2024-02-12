@@ -84,3 +84,24 @@ faqBtn.addEventListener('click', () => {
   navigateToSection(faqBtn, 'FAQ');
   updateDotPosition(faqBtn);
 });
+
+
+// ========== Handle FAQ dropdown ========== //
+const faqButtons = document.querySelectorAll('.faq__container-btn');
+
+faqButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    // Select the answer of the button clicked
+    const answer = button.parentElement.nextElementSibling;
+    
+    // Change visibility of the answer
+    answer.classList.toggle('is_hidden');
+    
+    // Change button render depending if the answer is visible or not
+    if (answer.classList.contains('is_hidden')) {
+      button.textContent = '+';
+    } else {
+      button.textContent = '-';
+    }
+  });
+});
