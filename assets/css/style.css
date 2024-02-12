@@ -234,3 +234,8 @@
   text-transform: uppercase;
   letter-spacing: 0.1rem;
 }
+
+/* ===== CONTACT PROJECTS =====  */
+.contact__icon {
+  margin-right: var(--gap-sm);
+}
