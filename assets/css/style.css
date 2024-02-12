@@ -235,7 +235,28 @@
   letter-spacing: 0.1rem;
 }
 
-/* ===== CONTACT PROJECTS =====  */
+/* ===== PAGE CONTACT =====  */
 .contact__icon {
   margin-right: var(--gap-sm);
+}
+
+/* ===== PAGE FAQ =====  */
+.faq__container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-md);
+}
+
+.faq__container-question {
+  display: flex;
+  gap: var(--gap-md);
+
+  font-size: 0.9rem;
+}
+
+.faq__container-answer {
+  font-family: 'NeueMontrealMono-Book';
+  font-size: 0.9rem;
+
+  margin-bottom: var(--gap-md);
 }
