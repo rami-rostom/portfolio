@@ -40,6 +40,10 @@
   font-style: normal; 
 }
 
+body {
+  background-color: none;
+}
+
 
 /* ============ GENERAL SECTION ============  */
 .is_selected {
@@ -110,6 +114,18 @@
 .intro-animation {
   opacity: 0;
   animation: fadeIn 1.2s ease-in forwards;
+}
+
+
+/* ============ CANVAS SECTION ============  */
+.canvas-light {
+  z-index: -1;
+  height: 100vh;
+}
+
+.canvas-dark {
+  z-index: -1;
+  height: 100vh;
 }
 
 
@@ -351,7 +367,7 @@
 
 /* ============ DARK MODE SETTINGS ============  */
 .is-dark #Page {
-  background-color: var(--color-black);
+  /* background-color: var(--color-black); */
   color: var(--color-white);
 }
 

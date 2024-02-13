@@ -14,10 +14,15 @@ const darkModeBtn = document.getElementById('Dark');
 const lightModeBtn = document.getElementById('Light');
 const darkModeBox = document.getElementById('btn-dark');
 const lightModeBox = document.getElementById('btn-light');
+const canvasDark = document.getElementById('CanvasDark');
+const canvasLight = document.getElementById('CanvasLight');
 
 // Switch to dark mode when click on dark mode box
 darkModeBtn.addEventListener('click', () => {
   document.body.classList.add('is-dark');
+
+  canvasDark.classList.remove('is_hidden');
+  canvasLight.classList.add('is_hidden');
 
   lightModeBox.classList.remove('is_selected');
   darkModeBox.classList.add('is_selected');
@@ -26,6 +31,9 @@ darkModeBtn.addEventListener('click', () => {
 // Switch to light mode when click on light mode box
 lightModeBtn.addEventListener('click', () => {
   document.body.classList.remove('is-dark');
+
+  canvasLight.classList.remove('is_hidden');
+  canvasDark.classList.add('is_hidden');
 
   darkModeBox.classList.remove('is_selected');
   lightModeBox.classList.add('is_selected');

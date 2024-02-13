@@ -9,6 +9,10 @@
   <title>Portfolio - Rami Rostom</title>
 </head>
 <body class="is-dark">
+  <!-- ============== CANVAS ============== -->
+  <div id="CanvasDark" class="canvas-dark"></div>
+  <div id="CanvasLight" class="canvas-light"></div>
+
   <!-- ============== INTRO ============== -->
   <div id="Intro" class="intro">
     <div>
@@ -217,5 +221,37 @@
   </div>
 
   <script src="/assets/js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.fog.min.js"></script>
+  <script>
+    VANTA.FOG ({
+      el: ".canvas-light",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      highlightColor: 0xa2a2a2,
+      midtoneColor: 0xe1e1e1,
+      lowlightColor: 0xd2d2d2,
+      baseColor: 0xffffff,
+      blurFactor: 0.50
+    })
+  </script>
+  <script>
+    VANTA.FOG ({
+      el: ".canvas-dark",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      highlightColor: 0x50522,
+      midtoneColor: 0x20202,
+      lowlightColor: 0x24242a,
+      baseColor: 0x2a2a37,
+      blurFactor: 0.50
+    })
+  </script>
 </body>
 </html>
