@@ -317,6 +317,10 @@
   margin-right: var(--gap-sm);
 }
 
+.contact-email {
+  cursor: pointer;
+}
+
 /* ===== PAGE FAQ =====  */
 .faq__container {
   width: 35rem;

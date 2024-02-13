@@ -116,3 +116,11 @@ faqButtons.forEach(button => {
     }
   });
 });
+
+
+// ========== Handle copy to clipboard ========== //
+const copyEmail = document.querySelector('.contact-email');
+
+copyEmail.addEventListener('click', () => {
+  navigator.clipboard.writeText('rami.rostom@proton.me');
+})
