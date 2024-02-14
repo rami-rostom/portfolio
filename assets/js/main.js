@@ -1,5 +1,5 @@
 // ========== Handle introduction ========== //
-const intro = document.getElementById('Intro');
+const intro = document.querySelector('.intro__container');
 
 // Intro page is visible few seconds when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
