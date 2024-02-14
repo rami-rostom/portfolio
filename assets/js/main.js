@@ -125,6 +125,28 @@ faqButtons.forEach(button => {
   });
 });
 
+// Same feature but for responsive
+const faqButtonsResp = document.querySelectorAll('.faq__container-btn--responsive');
+
+faqButtonsResp.forEach(button => {
+  button.addEventListener('click', () => {
+    console.log(button);
+    // Select the answer of the button clicked
+    const answer = button.parentElement.nextElementSibling;
+    console.log(answer)
+    
+    // Change visibility of the answer
+    answer.classList.toggle('is_hidden');
+    
+    // Change button render depending if the answer is visible or not
+    if (answer.classList.contains('is_hidden')) {
+      button.textContent = '+';
+    } else {
+      button.textContent = '-';
+    }
+  });
+});
+
 
 // ========== Handle copy to clipboard ========== //
 const copyEmail = document.querySelector('.contact__email');
