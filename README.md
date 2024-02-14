@@ -4,15 +4,19 @@
 
 Welcome to my portfolio project ! I'm Rami Rostom, a passionate full-stack JavaScript developer based in Paris. This repository showcases my skills, projects, and experiences in web development.
 
+<br />
+
+You can access it through the following [link](https://rami-rostom.github.io/)
+
 ## :rocket: Features
 
-- **Responsive Design:** My portfolio is designed to be accessible and visually appealing across various devices and screen sizes.
+- **Responsive design :** my portfolio is designed to be accessible and visually appealing across various devices and screen sizes.
   
-- **Project Showcase:** Explore a collection of projects I've worked on, ranging from web applications to personal projects, demonstrating my proficiency in JavaScript, React, TypeScript, Node.js and other technologies.
+- **Project showcase :** explore a collection of projects I've worked on demonstrating my proficiency in JavaScript, React, TypeScript, Node.js and other technologies.
 
-- **About Me:** Get to know me better! Learn about my background, skills, and experiences as a developer.
+- **About me :** get to know me better ! Learn about my background, skills, and experiences as a developer.
 
-- **Contact:** Interested in collaborating or have a project idea? Feel free to reach out to me through the provided contact information.
+- **Contact :** interested in collaborating or have a project idea ? Feel free to reach out to me through the provided contact information.
 
 ## :robot: Technologies used
 
