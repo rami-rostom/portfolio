@@ -14,7 +14,7 @@
 
 @media all and (max-width: 650px) {
   :root {
-    --pad: 30px;
+    --pad: 20px;
   }
 }
 
@@ -329,6 +329,12 @@ body {
   line-height: 1.5;
 }
 
+@media all and (max-width: 650px) {
+  .page__home-text {
+    font-size: 0.9rem;
+  }
+}
+
 /* ===== PAGE PROJECTS =====  */
 .page__projects {
   display: flex;
@@ -352,7 +358,7 @@ body {
   letter-spacing: 0.1rem;
 }
 
-@media all and (max-width: 650px) {
+@media all and (max-width: 600px) {
   .page__projects {
     display: flex;
     flex-direction: column;
@@ -361,6 +367,12 @@ body {
 
   .page__projects-title {
     font-size: 2.5rem;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .page__projects-title {
+    font-size: 2rem;
   }
 }
 
@@ -437,11 +449,12 @@ body {
     display: flex;
     align-items: baseline;
     gap: var(--gap-md);
+    font-size: 0.9rem;
   }
   
   .faq__container-answer--responsive {
     font-family: 'NeueMontrealMono-Book';
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     margin-bottom: var(--gap-md);
   }
 }

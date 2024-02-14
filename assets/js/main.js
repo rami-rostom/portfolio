@@ -107,41 +107,57 @@ faqBtn.addEventListener('click', () => {
 
 // ========== Handle FAQ dropdown ========== //
 const faqButtons = document.querySelectorAll('.faq__container-btn');
+const faqAnswers = document.querySelectorAll('.faq__container-answer');
 
 faqButtons.forEach(button => {
   button.addEventListener('click', () => {
-    // Select the answer of the button clicked
     const answer = button.parentElement.nextElementSibling;
     
-    // Change visibility of the answer
-    answer.classList.toggle('is_hidden');
+    // Check if the response is open
+    const isOpen = !answer.classList.contains('is_hidden');
+
+    // Close all answers
+    faqAnswers.forEach(answer => {
+      answer.classList.add('is_hidden');
+    });
     
-    // Change button render depending if the answer is visible or not
-    if (answer.classList.contains('is_hidden')) {
-      button.textContent = '+';
-    } else {
+    // Change all buttons into open
+    faqButtons.forEach(btn => {
+      btn.textContent = '+';
+    });
+
+    // If answer not open, open it and change button
+    if (!isOpen) {
+      answer.classList.remove('is_hidden');
       button.textContent = '-';
     }
   });
 });
 
-// Same feature but for responsive
-const faqButtonsResp = document.querySelectorAll('.faq__container-btn--responsive');
+// Same feature but for small screen
+const faqRespButtons = document.querySelectorAll('.faq__container-btn--responsive');
+const faqRespAnswers = document.querySelectorAll('.faq__container-answer--responsive');
 
-faqButtonsResp.forEach(button => {
+faqRespButtons.forEach(button => {
   button.addEventListener('click', () => {
-    console.log(button);
-    // Select the answer of the button clicked
     const answer = button.parentElement.nextElementSibling;
-    console.log(answer)
     
-    // Change visibility of the answer
-    answer.classList.toggle('is_hidden');
+    // Check if the response is open
+    const isOpen = !answer.classList.contains('is_hidden');
+
+    // Close all answers
+    faqRespAnswers.forEach(answer => {
+      answer.classList.add('is_hidden');
+    });
     
-    // Change button render depending if the answer is visible or not
-    if (answer.classList.contains('is_hidden')) {
-      button.textContent = '+';
-    } else {
+    // Change all buttons into open
+    faqRespButtons.forEach(btn => {
+      btn.textContent = '+';
+    });
+
+    // If answer not open, open it and change button
+    if (!isOpen) {
+      answer.classList.remove('is_hidden');
       button.textContent = '-';
     }
   });
