@@ -9,11 +9,9 @@
   <title>Portfolio - Rami Rostom</title>
 </head>
 <body class="is-dark">
-  <!-- ============== CANVAS ============== -->
   <div id="CanvasDark" class="canvas-dark"></div>
   <div id="CanvasLight" class="canvas-light"></div>
 
-  <!-- ============== INTRO ============== -->
   <div id="Intro" class="intro">
     <div>
       <h1 class="intro__title intro-animation">Rami Rostom <span class="intro__subtitle">Portfolio</span></h1>
@@ -21,7 +19,7 @@
   </div>
 
   <div id="Page" >
-    <!-- ============== FRAME SECTION ============== -->
+    <!-- ==== FRAME SECTION ==== -->
     <div id="Frame" class="frame">
       <div class="frame__line frame__line-left"></div>
       <div class="frame__line frame__line-right"></div>
@@ -29,7 +27,7 @@
       <div class="frame__line frame__line-bottom"></div>
     </div>
 
-    <!-- ============== THEME SECTION ============== -->
+    <!-- ==== THEME SECTION ==== -->
     <div id="Theme" class="theme">
       <div id="Light" class="theme__btn">
         <div id="btn-light" class="theme__btn-box"></div>
@@ -42,7 +40,7 @@
       </div>
     </div>
 
-    <!-- ============== HEADER SECTION ============== -->
+    <!-- ==== HEADER SECTION ==== -->
     <header id="Header" class="header">
       <h1 class="header__title">Rami Rostom</h1>
       <h2 class="header__subtitle">Développeur web</h2>
@@ -68,13 +66,13 @@
       </nav>
     </header>
     
-    <!-- ============== CONTENT SECTION ============== -->
+    <!-- ==== CONTENT SECTION ==== -->
     <main id="Content" class="content">
       <div class="content__inner">
-        <!-- ============== PAGE HOME ============== -->
+
+        <!-- ==== Home page ==== -->
         <section id="Home" class="page is_visible">
           <div class="page__section">
-            <!-- <h3 class="page__title">À propos</h3> -->
             <p class="page__home-text">
               Développeur web basé à Paris,<br />
               anciennement chef de projet<br />
@@ -89,7 +87,7 @@
           </div>
         </section>
 
-        <!-- ============== PAGE PROJECTS ============== -->
+        <!-- ==== Projects page ==== -->
         <section id="Projects" class="page is_hidden">
           <div class="page__section">
             <h3 class="page__title">Projets</h3>
@@ -122,13 +120,14 @@
           </div>
         </section>
 
-        <!-- ============== PAGE CONTACT ============== -->
+        <!-- ==== Contact page ==== -->
         <section id="Contact" class="page is_hidden">
           <div class="page__section">
             <h3 class="page__title">Contact</h3>
             <p>
               <i class="fa-regular fa-envelope contact__icon"></i>
-              <span class="contact-email">rami.rostom@proton.me</span>
+              <span class="contact__email">rami.rostom@proton.me</span>
+              <span class="contact__email-tooltip">Copié</span>
             </p>
             <p>
               <i class="fa-brands fa-github contact__icon"></i>
@@ -141,7 +140,7 @@
           </div>
         </section>
 
-        <!-- ============== PAGE FAQ ============== -->
+        <!-- ==== FAQ page ==== -->
         <section id="FAQ" class="page is_hidden">
           <div class="page__section">
             <h3 class="page__title">FAQ</h3>
@@ -221,6 +220,7 @@
   </div>
 
   <script src="/assets/js/main.js"></script>
+  <!-- ==== Canvas scripts ==== -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.fog.min.js"></script>
   <script>

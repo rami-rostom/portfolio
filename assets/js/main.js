@@ -1,7 +1,7 @@
 // ========== Handle introduction ========== //
 const intro = document.getElementById('Intro');
 
-// Intro page is visible the first 2 seconds when DOM is loaded
+// Intro page is visible few seconds when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
   setTimeout(() => {
     intro.classList.add('display-none');
@@ -127,8 +127,15 @@ faqButtons.forEach(button => {
 
 
 // ========== Handle copy to clipboard ========== //
-const copyEmail = document.querySelector('.contact-email');
+const copyEmail = document.querySelector('.contact__email');
+const tooltip = document.querySelector('.contact__email-tooltip');
 
 copyEmail.addEventListener('click', () => {
+  // Copy email
   navigator.clipboard.writeText('rami.rostom@proton.me');
+
+  // Then show tooltip
+  tooltip.classList.add('show');
+  setTimeout(() => { tooltip.classList.remove('show'); }, 2000);
 })
+

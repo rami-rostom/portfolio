@@ -333,9 +333,29 @@ body {
   margin-right: var(--gap-sm);
 }
 
-.contact-email {
+.contact__email {
   cursor: pointer;
 }
+
+.contact__email-tooltip {
+  visibility: hidden;
+  position: absolute;
+  right: 0rem;
+  top: 1.5rem;
+  z-index: 1;
+
+  color: var(--color-white);
+  background-color: var(--color-black);
+  font-size: 0.7rem;
+  text-align: center;
+  padding: 5px;
+  border-radius: 6px;
+}
+
+.contact__email-tooltip.show {
+  visibility: visible;
+}
+
 
 /* ===== PAGE FAQ =====  */
 .faq__container {
@@ -380,5 +400,10 @@ body {
 }
 
 .is-dark .is_selected {
+  background-color: var(--color-white);
+}
+
+.is-dark .contact__email-tooltip {
+  color: var(--color-black);
   background-color: var(--color-white);
 }
