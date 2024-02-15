@@ -1,12 +1,11 @@
-# Rami Rostom | Portfolio
+# Portfolio
 
 ## :bulb: Description
 
 Welcome to my portfolio project ! I'm Rami Rostom, a passionate full-stack JavaScript developer based in Paris. This repository showcases my skills, projects, and experiences in web development.
-
 <br />
 
-You can access it through the following [link](https://rami-rostom.github.io/)
+You can access it through the following [link](https://ramidev.me/) ! :rocket:
 
 ## :rocket: Features
 

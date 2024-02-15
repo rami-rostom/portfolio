@@ -301,9 +301,11 @@ body {
   text-decoration: none;
 }
 
-.header__nav-link-text:hover {
-  opacity: 35%;
-  transition-duration: 400ms;
+@media all and (min-width: 450px) {
+  .header__nav-link-text:hover {
+    opacity: 35%;
+    transition-duration: 300ms;
+  }
 }
 
 
@@ -362,9 +364,11 @@ body {
   gap: var(--gap-md);
 }
 
-.page__projects:hover {
-  opacity: 35%;
-  transition-duration: 400ms;
+@media all and (min-width: 450px) {
+  .page__projects:hover {
+    opacity: 35%;
+    transition-duration: 300ms;
+  }
 }
 
 .page__projects-detail {
